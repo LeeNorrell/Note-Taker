@@ -4,8 +4,7 @@ const fs = require('fs');
 const util = require('util');
 const dbPath = './db/db.json';
 const readTheFile = util.promisify(fs.readFile);
-process.env.PORT;
-const PORT = 3000;
+const PORT = process.env.PORT || 3000
 
 const app = express();
 
